@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="Generator" content="DSpace 6.0">
+<link href="themes/style.css" rel="stylesheet">
+<script>
+                //Clear default text of empty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ' '){element.value='';}
+                }
+                //Clear default text of empty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ' '){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/themes/Mirage2/vendor/respond/dest/respond.min.js"> </script>
+                <![endif]--><script src="/themes/Mirage2/vendor/modernizr/modernizr.js"> </script>
+<title>Repositorio - Administrador</title>
+</head><body>
+<header>
+<div role="navigation" class="navbar navbar-default navbar-static-top">
+<div class="container">
+<div class="navbar-header">
+  <img src="img/LOGO.png" alt="logo Institucional">
+<button data-toggle="offcanvas" class="navbar-toggle" type="button"><span class="sr-only">Cambiar navegaci&oacute;n</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/"><img src="/themes/Mirage2//images/DSpace-logo-line.svg"></a>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left ">
+<li>
+<form method="get" action="login.html" style="display: inline">
+  <button class="navbar-toggle navbar-link">
+    <a href="login.html">
+      <i aria-hidden="true" class="fa fa-user"></i>
+    </a>
+  </button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<ul class="nav navbar-nav pull-left"></ul>
+<ul class="nav navbar-nav pull-left">
+<li>
+<a href="/login"><span class="hidden-xs">Iniciar sesión</span></a>
+</li>
+</ul>
+<button type="button" class="navbar-toggle visible-sm" data-toggle="offcanvas"><span class="sr-only">Cambiar navegaci&oacute;n</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a data-toggle="dropdown" class="dropdown-toggle" role="button" href="#" id="trail-dropdown-toggle">Acceder&nbsp;<b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" role="menu" class="dropdown-menu">
+<li role="presentation">
+  <i aria-hidden="true" class="fa fa-home"></i>&nbsp;
+  <a href="fichero.html">Repositorio Institucional ISTLC- Fichero</a>
+</li>
+<li role="presentation" class="disabled">
+<a href="#" role="menuitem">Acceder</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>&nbsp;
+            <a href="Inicio.html">Repositorio Institucional ISTLC - Fichero</a>
+</li>
+<li class="active">Acceder</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="bg-wrap-left">
+<div class="bg-wrap-right">
+<div>
+    <body style="padding-bottom: 8%;">
+    <main>
+        <h3 class="texto_detalle">Detalles del fichero</h3>
+      <!-- Secciones de texto con líneas divisoras -->
+      <div class="informacion-section">
+        <div class="seccion-titulo">
+          <p>Titulo:</p>
+          <p class="contenido-seccion">Desarrollo e Implementación de un Módulo Virtual para la Biblioteca Institucional del ISTLC</p>
+        </div>
+        <hr class="linea-divisora">
+        
+        <div class="seccion-autor">
+          <p>Autor:</p>
+          <p class="contenido-seccion">Gómez Villamar Ana Estefanía</p>
+        </div>
+        <hr class="linea-divisora">
+        
+        <div class="seccion-fecha">
+          <p>Fecha de<br>publicación:</p>
+          <p class="contenido-seccion">10 de marzo del 2024</p>
+        </div>
+        <hr class="linea-divisora">
+        
+        <div class="seccion-resumen">
+          <p>Resumen:</p>
+          <p class="contenido-seccion">Este proyecto se centra en el diseño e implementación de un módulo de biblioteca virtual que permita que tanto estudiantes como docentes del Instituto Superior Tecnológico Liceo Cristiano de Guayaquil puedan buscar información organizada y actualizada sobre diversas áreas de estudio pertinentes a sus programas académicos y proyectos de investigación. Este módulo proporcionará acceso a recursos digitales como libros electrónicos, artículos científicos, y sobre todo la producción científica de los estudiantes, facilitando así el proceso de aprendizaje y enseñanza dentro de la institución. La metodología de investigación será de tipo cuantitativa, logrando conocer las perspectivas de los estudiantes en función de la necesidad de desarrollar una biblioteca digital. En relación a los resultados obtenidos, se determinó la importancia de realizar la propuesta mencionada, logrando así establecer una base que pueda ser utilizada en lo posterior por la Institución Educativa.</p>
+        </div>
+        <hr class="linea-divisora">
+        
+        <div class="seccion-uri">
+          <p>URL:</p>
+          <p class="contenido-seccion">https://superlative-cajeta-ef3ae3.netlify.app</p>i
+        </div>
+        <hr class="linea-divisora">
+        
+        <div class="seccion-colecciones">
+          <p>Aparece </br>en las colecciones:</br></p>
+          <p class="contenido-seccion">Repositorio de la carrera de Tecnología Superior en Desarrollo en Software</p>
+        </div>
+      </div>
+  
+      <!-- Cuadro final con ficheros -->
+      <div class="ficheros-section">
+        <p class="ficheros-titulo">Ficheros en este ítem:</p>
+        <table class="ficheros-table">
+          <thead>
+            <tr>
+              <th>Fichero</th>
+              <th>Descripción</th>
+              <th>Tamaño</th>
+              <th>Formato</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="enlace_color"><a href="https://repositorio.unemi.edu.ec/bitstream/123456789/2945/1/SINDROME%20METABOLICO%20LA%20PANDEMIA%20DEL%20SIGLO.pdf" target="_blank">Desarrollo e Implementación de un Módulo Virtual para la Biblioteca Institucional del ISTLC.pdf</a></td>
+              <td>Texto</td>
+              <td>2,09 MB</td>
+              <td>Adobe PDF</td>
+              <td><button class="visualizar-btn" onclick="window.open('https:\/\/repositorio.unemi.edu.ec/bitstream/123456789\/2945\/1\/SINDROME%20METABOLICO%20LA%20PANDEMIA%20DEL%20SIGLO.pdf', '_blank')">Visualizar/abrir</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <footer>
+        <div class="row">
+        <div class="col-xs-7 col-sm-8">
+        <ul class="menu-footer">
+        <li>Contacto y Asesor&iacute;a: Coordinaci&oacute;n de Publicaciones</li>
+        <li>Email: info@tecnologicoliceocristiano.edu.ec</li>
+        <li>WhatsApp: +593 968853150</li>
+        </ul>
+        <ul class="menu-footer">
+        <li>
+        <a href="">Departamento de Titulación e investigación</a>
+        </li>
+        <li>
+        <a href="https://www.flipsnack.com/98EA8566AED/revista-liceo.html">Revistas "YO SOY"</a>
+        </li>
+        <li>
+          <a href="https://www.tecnologicoliceocristiano.edu.ec/">Sitio Web Institucional</a>
+        </li>
+        </ul>
+        </div>
+        <div class="col-xs-5 col-sm-4 hidden-print">
+        <div class="pull-right">&copy; 2024 Intituto Superior Tecnologicco Liceo Cristiano</div>
+        </div>
+        </div>
+        <a class="hidden" href="/htmlmap">&nbsp;</a>
+        <p>&nbsp;</p>
+        </footer>
+    

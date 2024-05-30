@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+            <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+            <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+            <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+            <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+            <head><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<link rel="shortcut icon" href="/themes/Mirage2/images/favicon.ico">
+<link rel="apple-touch-icon" href="/themes/Mirage2/images/apple-touch-icon.png">
+<meta name="Generator" content="DSpace 6.0">
+<link href="style.css" rel="stylesheet">
+<link type="application/opensearchdescription+xml" rel="search" href="https://repositorio.uladech.edu.pe:443/open-search/description.xml" title="DSpace">
+<script>
+                //Clear default text of empty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ' '){element.value='';}
+                }
+                //Clear default text of empty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ' '){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/themes/Mirage2/vendor/respond/dest/respond.min.js"> </script>
+                <![endif]--><script src="/themes/Mirage2/vendor/modernizr/modernizr.js"> </script>
+<title>Repositorio - Administrador</title>
+</head><body>
+<header>
+<div role="navigation" class="navbar navbar-default navbar-static-top">
+<div class="container">
+<div class="navbar-header">
+<button data-toggle="offcanvas" class="navbar-toggle" type="button"><span class="sr-only">Cambiar navegaci&oacute;n</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/"><img src="/themes/Mirage2//images/DSpace-logo-line.svg"></a>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left ">
+<li>
+<form method="get" action="/login" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<ul class="nav navbar-nav pull-left"></ul>
+<ul class="nav navbar-nav pull-left">
+<li>
+<a href="/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+<button type="button" class="navbar-toggle visible-sm" data-toggle="offcanvas"><span class="sr-only">Cambiar navegaci&oacute;n</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a data-toggle="dropdown" class="dropdown-toggle" role="button" href="#" id="trail-dropdown-toggle">Acceder&nbsp;<b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" role="menu" class="dropdown-menu">
+<li role="presentation">
+<a role="menuitem" href="/"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>&nbsp;
+                        Repositorio Institucional ISTLC - Principal</a>
+</li>
+<li role="presentation" class="disabled">
+<a href="#" role="menuitem">Acceder</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>&nbsp;
+            <a href="/">Repositorio Institucional ULADECH - Principal</a>
+</li>
+<li class="active">Acceder</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="bg-wrap-left">
+<div class="bg-wrap-right">
+<div class="row row-offcanvas row-offcanvas-right">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+    <body>
+        
+ <form action="submit.php" method="post" enctype="multipart/form-data" class="form">
+
+<form id="aspect_eperson_PasswordLogin_div_login" class="ds-interactive-div primary" action="/password-login" method="post" onsubmit="javascript:tSubmit(this);">
+<h2 class="ds-div-head page-header first-page-header">Registro de documentación Académica</h2>
+
+<form action="submit.php" method="post" enctype="multipart/form-data" class="form">
+    <label for="id">ISBN - DOI</label>
+    <input type="text" name="id" id="author" required><br><br>
+
+    <label for="author">Autor:</label>
+    <input type="text" name="author" id="author" required><br><br>
+
+    <label for="title">Titulo:</label>
+    <input type="text" name="title" id="title" required><br><br>
+
+    <label for="theme">Tema:</label>
+    <input type="text" name="theme" id="theme" required><br><br>
+
+    <label for="review">Descrpcion:</label>
+    <textarea name="review" id="review" rows="3" cols="10" required></textarea><br>
+
+    <label for="publication_date">Fecha de publicacion:</label>
+    <input type="date" name="publication_date" id="publication_date" required><br>
+    <br>
+    <label for="category">Categoría:</label>
+    <select name="category" id="category" required>
+        <option value="">Seleccione la opción</option>
+        <option value="BOOK">LIBRO</option>
+        <option value="ARTICLE">ARTICULO CIENTIFICO</option>
+        <option value="THESIS">TESIS</option>
+        <option value="OTHER">OTRO</option>
+    </select><br>
+    <br>
+    <label for="file">Archivo:</label>
+    <input type="file" name="file" id="file" required>
+
+    <div class="buttons">
+      <button type="button" class="new">Nuevo</button>
+      <button type="button" class="search">Buscar</button>
+      <button type="submit" class="save">Guardar</button>
+      <button type="button" class="delete">Eliminar</button>
+  </div>
+
+  </form>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  
+<span></span>
+
+<div class="ds-static-div row">
+<fieldset id="aspect_eperson_PasswordLogin_list_password-login" class="col ds-form-list col-md-6">
+
+<div id="aspect_eperson_PasswordLogin_item_login-in" class="ds-form-item row">
+<div class="control-group col-sm-12">
+<p class="ds-paragraph">
+</p>
+</div>
+</div>
+</fieldset>
+</div>
+</form>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<div class="col-xs-7 col-sm-8">
+<ul class="menu-footer">
+<li>Contacto y Asesor&iacute;a: Coordinaci&oacute;n de Publicaciones</li>
+<li>Email: info@tecnologicoliceocristiano.edu.ec</li>
+<li>WhatsApp: </li>
+</ul>
+<ul class="menu-footer">
+<li>
+<a href="">Vicerrectorado de Investigaci&oacute;n</a>
+</li>
+<li>
+<a href="">Revistas Cient&iacute;ficas In Crescendo</a>
+</li>
+<li>
+<a href="">Sitio Web Institucional</a>
+</li>
+</ul>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">&copy; 2022 Universidad Cat&oacute;lica los &Aacute;ngeles de Chimbote</div>
+</div>
+</div>
+<a class="hidden" href="/htmlmap">&nbsp;</a>
+<p>&nbsp;</p>
+</footer>
+</div>
+</div>
+<div role="navigation" id="sidebar" class="col-xs-6 col-sm-3 sidebar-offcanvas">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form method="post" class="" id="ds-search-form" action="/discover">
+<fieldset>
+<div class="container">
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head  h6">Administrador</h2>
+<div id="aspect_viewArtifacts_Navigation_list_browse" class="list-group">
+<a class="list-group-item active"><span class="h5 list-group-item-heading  h5">Menú</span></a><a href="/community-list" class="list-group-item ds-option">Comunidades &amp; Colecciones</a><a href="/browse?type=dateissued" class="list-group-item ds-option">Por fecha de publicaci&oacute;n</a><a href="/browse?type=author" class="list-group-item ds-option">Autores</a><a href="/browse?type=title" class="list-group-item ds-option">T&iacute;tulos</a><a href="/browse?type=subject" class="list-group-item ds-option">Materias</a>
+</div>
+<h2 class="ds-option-set-head  h6">Mi cuenta</h2>
+<div id="aspect_viewArtifacts_Navigation_list_account" class="list-group">
+<a href="/login" class="list-group-item ds-option">Acceder</a>
+<a href="/login" class="list-group-item ds-option">Perfil</a>
+</div>
+<div id="aspect_viewArtifacts_Navigation_list_context" class="list-group"></div>
+<div id="aspect_viewArtifacts_Navigation_list_administrative" class="list-group"></div>
+<div id="aspect_discovery_Navigation_list_discovery" class="list-group"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm foot-uladech">
+<footer>
+<div class="row">
+<div class="col-xs-7 col-sm-8">
+<ul class="menu-footer">
+<li>Contacto y Asesor&iacute;a: Coordinaci&oacute;n de Publicaciones</li>
+<li>Email: info@tecnologicoliceocristiano.edu.e</li>
+<li>WhatsApp: </li>
+</ul>
+<ul class="menu-footer">
+<li>
+<a href="http://investigacion.uladech.edu.pe">Departamento de investigación</a>
+</li>
+<li>
+<a href="https://www.flipsnack.com/98EA8566AED/revista-liceo.html">Revistas "YO SOY"</a>
+</li>
+<li>
+<a href="https://www.tecnologicoliceocristiano.edu.ec/">Sitio Web Institucional</a>
+</li>
+</ul>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">&copy; 2024 Intituto Superior Tecnologicco Liceo Cristiano</div>
+</div>
+</div>
+<a class="hidden" href="/htmlmap">&nbsp;</a>
+<p>&nbsp;</p>
+</footer>
+</div>
+</div>
+<script type="text/javascript">
+                         if(typeof window.publication === 'undefined'){
+                            window.publication={};
+                          };
+                        window.publication.contextPath= '';window.publication.themePath= '/themes/Mirage2/';</script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='';window.DSpace.theme_path='/themes/Mirage2/';</script><script src="/themes/Mirage2/scripts/theme.js"> </script><script>
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                ga('create', 'UA-89916672-31', 'repositorio.uladech.edu.pe');
+                ga('send', 'pageview');
+            </script>
+</body></html>
