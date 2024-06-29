@@ -1,3 +1,17 @@
+// Importar SweetAlert
+const Swal = require('sweetalert2');
+
+// Crear popup
+Swal.fire({
+  title: 'Título del popup',
+  text: 'Contenido del popup',
+  icon: 'info',
+  confirmButtonText: 'Cerrar'
+});
+
+
+
+
 function DSpaceSetupAutocomplete(a, b) {
     $(function() {
         null == b.authorityName && (b.authorityName = dspace_makeFieldInput(b.inputName, "_authority"));
