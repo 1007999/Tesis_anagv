@@ -1,194 +1,123 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Administrador</title>
-  <style>
-    body {
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 14px;
-    line-height: 1.428571429;
-    color: #333;
-    background-color: #fff
-    }
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	.logo {
-		max-width: 100%;
-		height: auto;
-		display: block;
-		margin: 0 auto;
-}
-    .container {
-      display: flex;
-      height: 100vh;
-    }
+      <!--=============== REMIXICONS ===============-->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 
-    .sidebar {
-      width: 200px;
-      background: linear-gradient(to bottom, #003A69  0%, #003A69 100%) !important;
-      color: white;
-      padding: 20px;
-    }
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
 
-    .sidebar ul {
-      list-style: none;
-      padding: 0;
-    }
+      <title>Responsive dropdown menu - Bedimcode</title>
+   </head>
+   <body>
+      <!--=============== HEADER ===============-->
+      <header class="header">
+         <nav class="nav container">
+            <div class="nav__data">
+               <a href="#" class="nav__logo">
+                  <i class="ri-planet-line"></i> Company
+               </a>
+               
+               <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-menu-line nav__burger"></i>
+                  <i class="ri-close-line nav__close"></i>
+               </div>
+            </div>
 
-    .sidebar li {
-      margin-bottom: 10px;
-    }
+            <!--=============== NAV MENU ===============-->
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li><a href="#" class="nav__link">Home</a></li>
 
-    .sidebar a {
-      color: white;
-      text-decoration: none;
-    }
+                  <li><a href="#" class="nav__link">Company</a></li>
 
-    .content {
-      flex: 1;
-      padding: 20px;
-    }
+                  <!--=============== DROPDOWN 1 ===============-->
+                  <li class="dropdown__item">
+                     <div class="nav__link">
+                        Analytics <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     </div>
 
-    .title {
-	text-align: center;
-    margin-top: 1%;
-    margin-left: 1%;
-    margin-right: 1%;
-    background: linear-gradient(to bottom, #003A69  0%, #003A69 100%) !important;
-	color: #fff;
-    padding: 8px;
-      font-size: 30px;
-      margin-bottom: 20px;
-    }
+                     <ul class="dropdown__menu">
+                        <li>
+                           <a href="#" class="dropdown__link">
+                              <i class="ri-pie-chart-line"></i> Overview
+                           </a>                          
+                        </li>
 
-    .form-group {
-font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  background: #FFFFFF;
-  box-sizing: border-box;
-  width: 100%;
-  max-width: 405px;
-  margin: 0 auto;
-}
+                        <li>
+                           <a href="#" class="dropdown__link">
+                              <i class="ri-arrow-up-down-line"></i> Transactions
+                           </a>
+                        </li>
 
+                        <!--=============== DROPDOWN SUBMENU ===============-->
+                        <li class="dropdown__subitem">
+                           <div class="dropdown__link">
+                              <i class="ri-bar-chart-line"></i> Reports <i class="ri-add-line dropdown__add"></i>
+                           </div>
 
-.form label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
+                           <ul class="dropdown__submenu">
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-file-list-line"></i> Documents
+                                 </a>
+                              </li>
+      
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-cash-line"></i> Payments
+                                 </a>
+                              </li>
+      
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-refund-2-line"></i> Refunds
+                                 </a>
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </li>
+                  
+                  <li><a href="#" class="nav__link">Products</a></li>
 
-.form input,
-.form select {
-    width: 100%;
-    padding: 10px;
-    background-color: #F9F9F9;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    font-size: 16px;
-}
+                  <!--=============== DROPDOWN 2 ===============-->
+                  <li class="dropdown__item">
+                     <div class="nav__link">
+                        Users <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     </div>
 
-.form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    font-size: 16px;
-}
+                     <ul class="dropdown__menu">
+                        <li>
+                           <a href="#" class="dropdown__link">
+                              <i class="ri-user-line"></i> Profiles
+                           </a>                          
+                        </li>
 
-.form button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
+                        <li>
+                           <a href="#" class="dropdown__link">
+                              <i class="ri-lock-line"></i> Accounts
+                           </a>
+                        </li>
 
-.form button:hover {
-    background-color: #0069d9;
-}
+                        <li>
+                           <a href="#" class="dropdown__link">
+                              <i class="ri-message-3-line"></i> Messages
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
 
-.buttons {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-}
-    .checkbox-group {
-      margin-bottom: 15px;
-    }
+                  <li><a href="#" class="nav__link">Contact</a></li>
+               </ul>
+            </div>
+         </nav>
+      </header>
 
-    .checkbox {
-      margin-right: 5px;
-    }
-
-    .button {
-      background-color: #4CAF50;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-	h1,.h1,h2,.h2,h3,.h3 {
-    margin-top: 20px;
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    margin-bottom: 10px
-}
-
-    .menu {
-      background-color: #333;
-      color: white;
-      padding: 10px;
-      text-align: center;
-    }
-
-    .menu ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .menu li {
-      display: inline-block;
-      margin-right: 20px;
-    }
-
-    .menu a {
-      color: white;
-      text-decoration: none;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="sidebar">
-		<img src="/Img/LOGO_2.png" alt="Logo" width="160">
-		<br>
-		<br>
-      <ul>
-        <li><a href="#">Perfil</a></li>
-		<br>
-        <li><a href="#">Libros disponibles</a></li>
-        <li><a href="#">SOLICITUD DE CERTIFICADO</a></li>
-        <li><a href="Admistrador.html">Cargar archivos</a></li>
-        <li><a href="#">Actividad</a></li>
-        <li><a href="#">Ayuda</a></li>
-        <li><a href="#">Salir</a></li>
-      </ul>
-    </div>
-    <div class="content">
-    
-    </div>
-  </div>
-</body>
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+   </body>
 </html>
