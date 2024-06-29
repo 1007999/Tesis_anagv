@@ -22,26 +22,46 @@
       height: 100vh;
     }
 
-    .sidebar {
-      width: 200px;
-      background: linear-gradient(to bottom, #003A69  0%, #003A69 100%) !important;
-      color: white;
-      padding: 20px;
-    }
+	.sidebar {
+  width: 230px;
+  background: linear-gradient(to bottom, #003A69  0%, #003A69 100%) !important;
+  color: #FFFFFF;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
 
-    .sidebar ul {
-      list-style: none;
-      padding: 0;
-    }
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
-    .sidebar li {
-      margin-bottom: 10px;
-    }
+.sidebar li {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #ffffff42;
+}
 
-    .sidebar a {
-      color: white;
-      text-decoration: none;
-    }
+.sidebar a {
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.sidebar a:hover {
+  color: #CCCCCC;
+}
+
+.sidebar li.active {
+  background-color: #1A1D23;
+  border-radius: 10px;
+}
+
+.sidebar li.active a {
+  color: #FFFFFF;
+  font-weight: bold;
+}
 
     .content {
       flex: 1;
@@ -65,12 +85,13 @@ font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
-  background: #FFFFFF;
-  box-sizing: border-box;
+  padding: 40px;
+  background: #F7F7F7;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
   width: 100%;
-  max-width: 405px;
-  margin: 0 auto;
+  max-width: 900px; /* Aumentado el ancho máximo */
+  margin: 60px auto; /* Aumentado el margen superior */
 }
 
 
@@ -172,15 +193,14 @@ font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 <body>
   <div class="container">
     <div class="sidebar">
-		<img src="/Img/LOGO_2.png" alt="Logo" width="160">
+		<center><img src="/Img/LOGO_2.png" alt="Logo" width="160"></center>
 		<br>
 		<br>
       <ul>
         <li><a href="#">Perfil</a></li>
-		<br>
         <li><a href="#">Libros disponibles</a></li>
         <li><a href="#">SOLICITUD DE CERTIFICADO</a></li>
-        <li><a href="Admistrador.html">Cargar archivos</a></li>
+        <li><a href="a">Cargar archivos</a></li>
         <li><a href="#">Actividad</a></li>
         <li><a href="#">Ayuda</a></li>
         <li><a href="#">Salir</a></li>
