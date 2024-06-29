@@ -19,7 +19,7 @@
 }
     .container {
       display: flex;
-      height: 100vh;
+      height: 3000px;
     }
 
 	.sidebar {
@@ -82,7 +82,7 @@
 
     .form-group {
 font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  display: flex;
+  display: row;
   flex-direction: column;
   align-items: center;
   padding: 40px;
@@ -90,14 +90,14 @@ font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   width: 100%;
-  max-width: 900px; /* Aumentado el ancho máximo */
+  max-width: 1050px; /* Aumentado el ancho máximo */
   margin: 60px auto; /* Aumentado el margen superior */
 }
 
 
 .form label {
-    display: block;
-    margin-bottom: 10px;
+    display:row; 
+    margin-bottom: 100px;
     font-weight: bold;
 }
 
@@ -208,37 +208,46 @@ font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     </div>
     <div class="content">
       <h3 class="title">Administrador</h3>
+	  <h2 class="ds-div-head page-header first-page-header">Registro de documentación Académica</h2>
       <div class="form-group">
 		<section>
-		  <form action="submit.php" method="post" enctype="multipart/form-data" class="form">
-			<label for="author">Author:</label>
-			<input type="text" name="author" id="author" required><br>
-	  
-			<label for="title">Title:</label>
-			<input type="text" name="title" id="title" required><br>
-	  
-			<label for="theme">Theme:</label>
-			<input type="text" name="theme" id="theme" required><br>
-	  
-			<label for="review">Review:</label>
-			<textarea name="review" id="review" rows="4" cols="50" required></textarea><br>
-	  
-			<label for="publication_date">Publication Date:</label>
-			<input type="date" name="publication_date" id="publication_date" required><br>
-	  
-			<label for="category">Category:</label>
-			<select name="category" id="category" required>
-				<option value="">Select an option</option>
-				<option value="BOOK">BOOK</option>
-				<option value="ARTICLE">ARTICLE</option>
-				<option value="THESIS">THESIS</option>
-				<option value="OTHER">OTHER</option>
-			</select><br>
-	  
-			<label for="file">File:</label>
-			<input type="file" name="file" id="file" required><br>
-	  
-			<button type="submit" name="submit">Submit</button>
+			<form action="submit.php" method="post" enctype="multipart/form-data" class="form">
+				<label for="id">ISBN - DOI</label>
+				<input type="text" name="id" id="author" required><br><br>
+			
+				<label for="author">Autor:</label>
+				<input type="text" name="author" id="author" required><br><br>
+			
+				<label for="title">Titulo:</label>
+				<input type="text" name="title" id="title" required><br><br>
+			
+				<label for="theme">Tema:</label>
+				<input type="text" name="theme" id="theme" required><br><br>
+			
+				<label for="review">Descrpcion:</label>
+				<textarea name="review" id="review" rows="3" cols="10" required></textarea><br>
+			
+				<label for="publication_date">Fecha de publicacion:</label>
+				<input type="date" name="publication_date" id="publication_date" required><br>
+				<br>
+				<label for="category">Categoría:</label>
+				<select name="category" id="category" required>
+					<option value="">Seleccione la opción</option>
+					<option value="BOOK">LIBRO</option>
+					<option value="ARTICLE">ARTICULO CIENTIFICO</option>
+					<option value="THESIS">TESIS</option>
+					<option value="OTHER">OTRO</option>
+				</select><br>
+				<br>
+				<label for="file">Archivo:</label>
+				<input type="file" name="file" id="file" required>
+			
+				<div class="buttons">
+				  <button type="button" class="new">Nuevo</button>
+				  <button type="button" class="search">Buscar</button>
+				  <button type="submit" class="save">Guardar</button>
+				  <button type="button" class="delete">Eliminar</button>
+			  </div>
 		  </form>
 		  </div>
 		</section>
