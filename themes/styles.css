@@ -36,7 +36,8 @@
   }
   
   .card p {
-    font-size: 16px;
+    text-align: justify;
+    font-size: 10px;
     line-height: 1.5;
   }
 
@@ -8429,7 +8430,7 @@ button.delete {
     font-style: justify;
     display: flex;
     align-items: baseline;
-    margin-left: 17%;
+    margin-left: 5%;
 }
 
 .seccion-titulo p,
@@ -8466,7 +8467,7 @@ button.delete {
   }
   
   .ficheros-section {
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: calc(50px + 10vh);
     padding-bottom: 5.5%;
     margin-left: 20%;
@@ -8501,9 +8502,9 @@ button.delete {
   }
   
   .visualizar-btn {
-    background-color: #e0e0e0;
+    background-color: #23527c;
     border-color: #ccc;
-    color: rgb(1, 0, 1);
+    color: #FFFFFF;
     padding: 5px 10px;
     border: none;
     cursor: pointer;

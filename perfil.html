@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Administrador</title>
+  <style>
+ body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #333;
+  background-color: #fff;
+}
+
+.sidebar {
+  width: 230px;
+  background: linear-gradient(to bottom, #003A69 0%, #003A69 100%) !important;
+  color: #FFFFFF;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #ffffff42;
+}
+
+.sidebar a {
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.sidebar a:hover {
+  color: #CCCCCC;
+}
+
+.sidebar li.active {
+  background-color: #1A1D23;
+  border-radius: 10px;
+}
+
+.sidebar li.active a {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  background: linear-gradient(to bottom, #003A69 0%, #003A69 100%) !important;
+  color: #fff;
+  padding: 8px;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.btn-add {
+  background-color: #337ab7;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-add:hover {
+  background-color: #23527c;
+}
+
+.accounts-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.accounts-table thead th {
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.accounts-table tbody td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.accounts-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.accounts-table tbody tr:hover {
+  background-color: #eee;
+}
+
+.accounts-table .actions {
+  text-align: right;
+}
+
+.accounts-table .actions button {
+  background-color: #337ab7;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.accounts-table .actions button:hover {
+  background-color: #23527c;
+}
+
+p {
+  font-size: 14px;
+  color: #666;
+  margin-top: 20px;
+}
+
+/* Media queries for responsive design */
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 150px;
+  }
+  .content {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 100px;
+  }
+  .content {
+    padding: 5px;
+  }
+}
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="sidebar">
+      <center><img src="/Img/LOGO_2.png" alt="Logo" width="160"></center>
+      <br>
+      <br>
+      <ul>
+        <li><a href="Perfil admin.html">Perfil</a></li>
+        <li><a href="#">Libros disponibles</a></li>
+        <li><a href="#">SOLICITUD DE CERTIFICADO</a></li>
+        <li><a href="Admistrador.html">Cargar archivos</a></li>
+        <li><a href="#">Actividad</a></li>
+        <li><a href="#">Ayuda</a></li>
+        <li><a href="#">Salir</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+    <section>
+      <h1>Registro y consulta de cuentas de cliente</h1>
+      <button class="btn-add">Agregar Nueva</button>
+      <table class="accounts-table">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Cuen</th>
+            <th>Contrato</th>
+            <th>Ciudad</th>
+            <th>Unidad de Negocios</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- accounts will be listed here -->
+        </tbody>
+      </table>
+      <p>*Los gráficos de consumo se encuentran habilitados solo para medidores con tecnología AMI</p>
+    </section>
+  </main>
+</body>
+</html>

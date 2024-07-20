@@ -80,110 +80,191 @@
       margin-bottom: 20px;
     }
 
-    .form-group {
-font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  display: row;
+/* Estilos generales */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de perfil */
+
+.profile {
+  display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px;
-  background: #F7F7F7;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  width: 100%;
-  max-width: 1050px; /* Aumentado el ancho máximo */
-  margin: 60px auto; /* Aumentado el margen superior */
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
 }
 
-
-.form label {
-    display:row; 
-    color: #000;
-    background-color: #fff;
-    margin-bottom: 100px;
-    font-weight: bold;
+.profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
 
-.form input,
-.form select {
-    width: 100%;
-    padding: 10px;
-    background-color: #ffffff;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    font-size: 16px;
+.profile h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
-.form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    font-size: 16px;
+.profile p {
+  font-size: 18px;
+  color: #666;
 }
 
-.form button {
-    display: block;
-    width: 100%;
-    padding: 15px;
-    color: rgb(0, 0, 0);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+/* Estilos de navegación */
+
+.nav {
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ddd;
 }
 
-.form button:hover {
-    background-color: #0069d9;
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
-.buttons {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-}
-    .checkbox-group {
-      margin-bottom: 15px;
-    }
-
-    .checkbox {
-      margin-right: 5px;
-    }
-
-   
-.new {
-  background-color: #4CAF50;
-  color: #fff;
+.nav li {
+  margin-right: 20px;
 }
 
-.new:hover {
-  background-color: #3e8e41;
+.nav a {
+  color: #337ab7;
+  text-decoration: none;
 }
 
-.search {
-  background-color: #2196F3;
-  color: #fff;
+.nav a:hover {
+  color: #23527c;
 }
 
-.search:hover {
-  background-color: #0b7dda;
+/* Estilos de about */
+
+.about {
+  padding: 20px;
 }
 
-.save {
-  background-color: #8BC34A;
-  color: #fff;
+.about h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
-.save:hover {
-  background-color: #689f38;
+.about p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
 }
 
-.delete {
-  background-color: #FF9800;
-  color:
+/* Estilos de intereses */
+
+.interests {
+  padding: 20px;
+}
+
+.interests h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.interests ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.interests li {
+  margin-bottom: 10px;
+}
+
+.interests p {
+  font-size: 16px;
+  color: #666;
+}
+
+.interests span {
+  font-size: 14px;
+  color: #999;
+  margin-left: 10px;
+}
+
+/* Estilos de feed */
+
+.feed {
+  padding: 20px;
+}
+
+.feed h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.feed ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.feed li {
+  margin-bottom: 10px;
+}
+
+.feed p {
+  font-size: 16px;
+  color: #666;
+}
+
+.feed span {
+  font-size: 14px;
+  color: #999;
+  margin-left: 10px;
+}
+
+/* Estilos de otros usuarios */
+
+.users {
+  padding: 20px;
+}
+
+.users h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.users ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.users li {
+  margin-bottom: 10px;
+}
+
+.users p {
+  font-size: 16px;
+  color: #666;
 }
 
 
@@ -238,22 +319,24 @@ font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 </head>
 <body>
   <div class="container">
-    <div class="sidebar">
-		<center><img src="/Img/LOGO_2.png" alt="Logo" width="160"></center>
-		<br>
-		<br>
-      <ul>
-        <li><a href="#">Perfil</a></li>
-        <li><a href="#">Libros disponibles</a></li>
-        <li><a href="#">SOLICITUD DE CERTIFICADO</a></li>
-        <li><a href="a">Cargar archivos</a></li>
-        <li><a href="#">Actividad</a></li>
-        <li><a href="#">Ayuda</a></li>
-        <li><a href="#">Salir</a></li>
-      </ul>
-    </div>
-    <div class="content">
-  
+    <h1>Registro y consulta de cuentas de cliente</h1>
+    <button class="btn-add">Agregar Nueva</button>
+    <table class="accounts-table">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Cuen</th>
+          <th>Contrato</th>
+          <th>Ciudad</th>
+          <th>Unidad de Negocios</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- accounts will be listed here -->
+      </tbody>
+    </table>
+    <p>*Los gráficos de consumo se encuentran habilitados solo para medidores con tecnología AMI</p>
   </div>
 </body>
 </html>

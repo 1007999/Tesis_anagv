@@ -80,7 +80,7 @@
       margin-bottom: 20px;
     }
 
-    .form-group {
+.form-group {
 font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   display: row;
   flex-direction: column;
@@ -89,11 +89,10 @@ font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   background: #F7F7F7;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  width: 100%;
+  width: 90%;
   max-width: 1050px; /* Aumentado el ancho máximo */
   margin: 60px auto; /* Aumentado el margen superior */
 }
-
 
 .form label {
     display:row; 
@@ -128,63 +127,74 @@ font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 .form button {
     display: block;
     width: 100%;
+    padding: 20px 30px; /* 20px arriba y abajo, 30px a los lados */
+    height: 50%; /* Es probable que desees ajustar este valor */
     padding: 15px;
-    color: rgb(0, 0, 0);
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    margin-bottom: 10px; /* Ajusta este valor según el espacio que desees */
+}
+
+.form button:not(:last-child) {
+    margin-bottom: 5px; /* Ajusta este valor según el espacio que desees */
 }
 
 .form button:hover {
-    background-color: #0069d9;
+    background-color: #969696;
 }
 
 .buttons {
     display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
+    margin-top: 5px;
+    gap: 10px; /* Agrega un espacio de 10px entre los botones */
 }
-    .checkbox-group {
-      margin-bottom: 15px;
-    }
 
-    .checkbox {
-      margin-right: 5px;
-    }
+.checkbox-group {
+    margin-bottom: 15px;
+}
 
-   
+.checkbox {
+    margin-right: 5px;
+}
+
 .new {
-  background-color: #4CAF50;
-  color: #fff;
+    background-color: #003A69;
+    color: #fff;
 }
 
 .new:hover {
-  background-color: #3e8e41;
+    background-color: #3e8e41;
 }
 
 .search {
-  background-color: #2196F3;
-  color: #fff;
+    background-color: #2196F3;
+    color: #fff;
 }
 
 .search:hover {
-  background-color: #0b7dda;
+    background-color: #0b7dda;
 }
 
 .save {
-  background-color: #8BC34A;
-  color: #fff;
+    background-color: #689f38;
+    color: #fff;
 }
 
 .save:hover {
-  background-color: #689f38;
+    background-color: #558b2f;
 }
 
 .delete {
-  background-color: #FF9800;
-  color:
+    background-color: #be1b05;
+    color: #fff; /* Falta este valor */
 }
+
+.delete:hover {
+    background-color: #fb8c00;
+}
+
 
 
   h1, .h1, h2, .h2, h3, .h3 {
