@@ -4960,7 +4960,7 @@ a.label:hover,a.label:focus {
 
 a.list-group-item.active>.badge,.nav-pills>.active>a>.badge {
     color: #607890;
-    background-color: #fff
+    background-color: #ffffff
 }
 
 .nav-pills>li>a>.badge {
