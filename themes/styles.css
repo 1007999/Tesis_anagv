@@ -8532,5 +8532,66 @@ footer .row>div {
     background-color: rgb(255, 225, 0);
     color: rgb(1, 0, 1);
   }
-
+/* Estilos para la ventana de búsqueda de usuarios */
+#busqueda-usuario {
+    width: 400px;
+    margin: 40px auto;
+  }
+  
+  #busqueda-usuario .modal-header {
+    background-color: #337ab7;
+    color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #busqueda-usuario .modal-body {
+    padding: 20px;
+  }
+  
+  #busqueda-usuario .form-group {
+    margin-bottom: 20px;
+  }
+  
+  #busqueda-usuario .btn-primary {
+    background-color: #337ab7;
+    border-color: #337ab7;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Estilos para la ventana de impresión de certificado */
+  #impresion-certificado {
+    width: 800px;
+    margin: 40px auto;
+  }
+  
+  #impresion-certificado .modal-header {
+    background-color: #337ab7;
+    color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #impresion-certificado .modal-body {
+    padding: 20px;
+  }
+  
+  #impresion-certificado #certificado-usuario {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  #impresion-certificado .btn-primary {
+    background-color: #337ab7;
+    border-color: #337ab7;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
   
