@@ -6174,7 +6174,7 @@ button.close {
     margin: 0;
     padding: 8px 14px;
     font-size: 14px;
-    background-color: #f7f7f7;
+    background-color: #FFF;
     border-bottom: 1px solid #ebebeb;
     border-radius: 5px 5px 0 0
 }
@@ -6965,7 +6965,7 @@ footer>.container .pull-right {
 }
 
 #main-container .row-offcanvas {
-    background-color: #f7f7f7
+    background-color: #FFF
 }
 
 #main-container #sidebar {
@@ -8139,12 +8139,12 @@ body {
 }
 
 .bg-wrap-left {
-    background: #fff url('../images/background_left.png') no-repeat left 0;
+    background: #fff;
     padding: 20px 40px;
 }
 
 .bg-wrap-right {
-    background: transparent url('../images/background_right.png') no-repeat right 0;
+    background: transparent url('') no-repeat right 0;
     padding: 0 55px 0 0;
     margin-right: -40px;
 }
@@ -8303,7 +8303,7 @@ footer .row>div {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 13px;
 }
 
 .form button:hover {
@@ -8312,38 +8312,53 @@ footer .row>div {
 
 .buttons {
     display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
+    margin-top: 5px;
+    gap: 10px; /* Agrega un espacio de 10px entre los botones */
 }
 
-button {
-    border: none;
-    color: white;
-    padding: 5px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    margin: 4px 2px;
-    cursor: pointer;
+.checkbox-group {
+    margin-bottom: 15px;
 }
 
-button.new {
+.checkbox {
+    margin-right: 5px;
+}
+
+.new {
+    background-color: #003A69;
+    color: #fff;
+}
+
+.new:hover {
+    background-color: #3e8e41;
+}
+
+.search {
     background-color: #2196F3;
+    color: #fff;
 }
 
-button.search {
-    background-color: #00bcd4;
+.search:hover {
+    background-color: #0b7dda;
 }
 
-button.save {
-    background-color: #528b27;
+.save {
+    background-color: #689f38;
+    color: #fff;
 }
 
-button.delete {
-    background-color: #f44336;
+.save:hover {
+    background-color: #558b2f;
 }
 
+.delete {
+    background-color: #be1b05;
+    color: #fff; /* Falta este valor */
+}
+
+.delete:hover {
+    background-color: #fb8c00;
+}
 .slider {
     width: 90%;
     height: 400px;

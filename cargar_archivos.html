@@ -69,13 +69,55 @@
 <div class="horizontal-slider clearfix">
 <div class="col-xs-12 col-sm-12 col-md-9 main-content">
 <div>
-<h2 class="ds-div-head page-header first-page-header">Bienvenido</h2>
-<
+<h2 class="ds-div-head page-header first-page-header">Registro de documentación Académica</h2>
+<h4 class="title">Descripción de campos:</h4>
 <br>
 <br>
 <div id="file_news_div_news" class="ds-static-div primary">
 </div>
 
+<div class="article">
+  <section>
+    <form action="submit.php" method="post" enctype="multipart/form-data" class="form">
+      <label for="id">ISBN - DOI</label>
+      <input type="text" name="id" id="author" required><br><br>
+    
+      <label for="author">Autor:</label>
+      <input type="text" name="author" id="author" required><br><br>
+    
+      <label for="title">Titulo:</label>
+      <input type="text" name="title" id="title" required><br><br>
+    
+      <label for="theme">Tema:</label>
+      <input type="text" name="theme" id="theme" required><br><br>
+    
+      <label for="review">Descrpcion:</label>
+      <textarea name="review" id="review" rows="3" cols="10" required></textarea><br>
+    
+      <label for="publication_date">Fecha de publicacion:</label>
+      <input type="date" name="publication_date" id="publication_date" required><br>
+      <br>
+      <label for="category">Categoría:</label>
+      <select name="category" id="category" required>
+        <option value="">Seleccione la opción</option>
+        <option value="BOOK">LIBRO</option>
+        <option value="ARTICLE">ARTICULO CIENTIFICO</option>
+        <option value="THESIS">TESIS</option>
+        <option value="OTHER">OTRO</option>
+      </select><br>
+      <br>
+      <label for="file">Archivo:</label>
+      <input type="file" name="file" id="file" required>
+    
+      <div class="buttons">
+        <button type="button" class="new">Nuevo</button>
+        <button type="button" class="search">Buscar</button>
+        <button type="submit" class="save">Guardar</button>
+        <button type="button" class="delete">Eliminar</button>
+      </div>
+    </form>
+    </div>
+  </section>
  <br>
  <br>
  <br>
@@ -130,14 +172,7 @@
 </div>
 <h2 class="ds-option-set-head  h6">Mi cuenta</h2>
 <div id="aspect_viewArtifacts_Navigation_list_browse" class="list-group">
-  <span class="h5 list-group-item-heading">Administrador</span>
-</a>
-<a href="#" class="list-group-item ds-option">Libros disponibles</a>
-<a href="" class="list-group-item ds-option">SOLICITUD DE CERTIFICADO</a>
-<a href="cargar_archivos.html" class="list-group-item ds-option">Cargar archivos</a>
-<a href="#" class="list-group-item ds-option">Actividad</a>
-<a href="" class="list-group-item ds-option">Ayuda</a>
-<a href="logout.html" class="list-group-item ds-option">Salir</a>
+<a class="list-group-item active"><span class="h5 list-group-item-heading  h5">Administrador</span></a><a href="tesis.html" class="list-group-item ds-option">Libros disponibles</a><a href="" class="list-group-item ds-option">SOLICITUD DE CERTIFICADO</a><a href="tesis.html" class="list-group-item ds-option">Cargar archivos</a><a href="" class="list-group-item ds-option">Actiividad</a><a href="tesis.html" class="list-group-item ds-option">Ayuda</a><a href="tesis.html" class="list-group-item ds-option">Salir</a>
 </div>
 <h2 class="ds-option-set-head  h6">Perfil</h2>
 <div id="aspect_viewArtifacts_Navigation_list_account" class="list-group">
